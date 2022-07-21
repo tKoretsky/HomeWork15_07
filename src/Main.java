@@ -71,11 +71,13 @@ public class Main {
         System.out.println("Avarage is " + avrg);
 
         // Завдання 7:
-        int maxEven = array[0];
 
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] > maxEven && array[i] % 2 == 0) {
-                maxEven = array[i];
+        int[]array3 = {-5,-3,-10,-781,-11,-67, -32, 115, 64, -2};
+        int maxEven = Integer.MIN_VALUE;
+
+        for (int i = 0; i < array3.length; i++) {
+            if (array3[i] > maxEven && array3[i] % 2 == 0) {
+                maxEven = array3[i];
             }
         }
         System.out.println("Завдання 7:");
