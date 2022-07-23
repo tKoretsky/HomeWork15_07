@@ -3,20 +3,13 @@ import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
-
         // Завдання 1:
         Random random = new Random();
-
         int[] array = new int[15];
-
         for (int i = 0; i < array.length; i++) {
-
             int number = random.nextInt(50);
-
             while (number % 2 != 0) {
-
                 number = random.nextInt(50);
-
             }
             array[i] = number;
         }
@@ -33,14 +26,12 @@ public class Main {
         char[] array2 = new char[15];
         System.out.println("\nЗавдання 3:");
         for (int i = 0; i < array.length; i++) {
-
             array2[i] = (char) random.nextInt(255);
             System.out.print(array2[i] + " ");
         }
 
         // Завдання 4:
         int max = array[0];
-
         for (int i = 0; i < array.length; i++) {
             if (array[i] > max) {
                 max = array[i];
@@ -51,7 +42,6 @@ public class Main {
 
         // Завдання 5:
         int min = array[0];
-
         for (int i = 0; i < array.length; i++) {
             if (array[i] < min) {
                 min = array[i];
@@ -71,10 +61,8 @@ public class Main {
         System.out.println("Avarage is " + avrg);
 
         // Завдання 7:
-
         int[]array3 = {-5,-3,-10,-781,-11,-67, -32, 115, 64, -2};
         int maxEven = Integer.MIN_VALUE;
-
         for (int i = 0; i < array3.length; i++) {
             if (array3[i] > maxEven && array3[i] % 2 == 0) {
                 maxEven = array3[i];
@@ -84,13 +72,11 @@ public class Main {
         System.out.println("Max even is " + maxEven);
 
         // Завдання 8:
-
         System.out.println("Завдання 8:");
         for (int i = 0; i < array.length; i++) {
             if (i % 2 == 0) {
                 System.out.print(array[i] + " ");
             }
         }
-
     }
 }
